@@ -135,8 +135,7 @@ def binarize(im, thresh=120):
 if __name__ == '__main__':
     im = get_img()
     # im = Image.open("./tmp.jpg")
-    temp = ocr_question_extract(im)
-    print('OCR Question:{}'.format(temp))
+    print('OCR Question:{}'.format(ocr_question_extract(im)))
     for y in range(2):
         for x in range(4):
             im2 = get_sub_img(im, x, y)
