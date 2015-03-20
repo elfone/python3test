@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 # A system Information Gathering SCript
 import subprocess
 
@@ -13,5 +13,3 @@ diskspcae = "df"
 diskspcae_arg = '-h'
 print("Gathering diskspace information {} command:\n".format(diskspcae))
 subprocess.call([diskspcae, diskspcae_arg])
-
-
