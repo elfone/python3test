@@ -25,7 +25,7 @@ def replace_docroot(conf_string, vhost, new_docroot):
         if in_vhost and (curr_vhost == vhost):
             docroot_match = docroot_re.search(line)
             if docroot_match:
-                sub_line = docroot_re.sub(r'{}#s'.format(new_docroot), line)
+                sub_line = docroot_re.sub(r'\1{}'.format(new_docroot), line)
                 line = sub_line
         vhost_end_match = vhost_end.search(line)
         if vhost_end_match:
