@@ -9,7 +9,7 @@ def check_webserver(address, port, resource):
     # build up HTTPrequest string
     if not resource.startswith('/'):
         resource = '/' + resource
-    request_string = 'GET %s HTTP/1.1\r]hHost: %s\r\n\r\n' % (resource, address)
+    request_string = 'GET %s HTTP/1.1\r\nHost: %s\r\n\r\n' % (resource, address)
     print('HTTP request:')
     print('|||%s|||' % request_string)
     # create a TCP socket
