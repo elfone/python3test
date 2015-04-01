@@ -32,4 +32,4 @@ class diskwalk(object):
         for dirpath, dirnames, filenames in os.walk(self.path):
             for dir in dirnames:
                 dir_collection.append(dir)
-        return  dir_collection
+        return dir_collection
