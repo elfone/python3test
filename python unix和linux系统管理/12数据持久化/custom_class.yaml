@@ -1,0 +1,2 @@
+!!python/object:custom_class.MyClass
+data: [1, 2, 3]
