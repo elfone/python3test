@@ -13,9 +13,9 @@ def main():
     p.add_option('--dir', action='store', dest='dir', nargs=2)
     options, arguments = p.parse_args()
     if options.dir:
-        for dir in options.dir:
-            print('Listing of %s:\n' % dir)
-            for filename in os.listdir(dir):
+        for dir1 in options.dir:
+            print('Listing of %s:\n' % dir1)
+            for filename in os.listdir(dir1):
                 print(filename)
     else:
         p.print_help()
